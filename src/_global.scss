@@ -1,0 +1,23 @@
+body{
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(../public/images/bg-pattern-desktop.svg);
+    margin: 0;
+}
+html{
+    overflow-y: hidden;
+    @include breakpoint-up('medium'){
+    overflow-y: hidden;
+    
+    }
+}
+.hide-desktop{
+    @include breakpoint-up('medium'){
+        display: none;
+    }
+}
+.hide-mobile{
+    @include breakpoint-down('small'){
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+.container{
+
+display: flex;
+flex-direction: column;
+
+@include breakpoint-up('medium'){
+    flex-direction: row;
+}
+
+&__left{
+    flex: 0 2 40%;
+    
+}
+&__right{
+flex: 2 0 auto;
+display: none;
+order: 1;
+    @include breakpoint-up('medium'){
+        display: block;
+        order: 2;
+    }
+
+}
+}

@@ -1,0 +1,36 @@
+.image{
+    background-origin: content-box;
+    &__desktop{
+    display: none;
+    flex-basis: auto;
+    width: 100%;
+  
+    @include breakpoint-up('medium'){
+        background-position: right;
+        display: block;
+        align-self: flex-end;
+        flex: 0 0 50%;
+        background-image: url(../public/images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        order: 2;
+        height: 100vh;
+    }
+    }
+
+    &__mobile{
+        background-image: url(../public/images/hero-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 15.625rem;
+        flex-grow: 1;
+
+        @include breakpoint-up('medium'){
+            display: none;
+        }
+    }
+
+
+
+
+}
