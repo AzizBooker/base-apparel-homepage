@@ -236,6 +236,8 @@ html {
 
 .hero__button #btn {
   border-color: transparent;
+  width: 70px;
+  height: 1.7rem;
   border-radius: 30px;
   border-style: solid;
   outline: none;
@@ -245,7 +247,6 @@ html {
           transform: scale(1.5);
   color: white;
   background: #f8bfbf;
-  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
 }
 
 .image {
