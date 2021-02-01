@@ -10,7 +10,7 @@
         display: block;
         align-self: flex-end;
         flex: 0 0 50%;
-        background-image: url(../public/images/hero-desktop.jpg);
+        background-image: url(./images/hero-desktop.jpg);
         background-repeat: no-repeat;
         order: 2;
         height: 100vh;
@@ -18,7 +18,7 @@
     }
 
     &__mobile{
-        background-image: url(../public/images/hero-mobile.jpg);
+        background-image: url(./images/hero-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100vw;
